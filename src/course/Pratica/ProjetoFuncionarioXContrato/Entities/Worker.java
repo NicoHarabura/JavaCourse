@@ -90,10 +90,10 @@ public class Worker {
 			int c_year = cal.get(Calendar.YEAR); // VARIÁVEL PARA COMPARAÇÃO
 													// RECEBE ANO DO CONTRATO
 													// (QUE ESTAVA NO C)
-			int c_month = cal.get(Calendar.MONTH); // VARIÁVEL PARA COMPARAÇÃO
+			int c_month = 1 + cal.get(Calendar.MONTH); // VARIÁVEL PARA COMPARAÇÃO
 													// RECEBE MÊS DO CONTRATO
 													// (QUE ESTAVA NO C)
-			if (c_year == year && c_month == month) {
+			if (year == c_year && month == c_month) {
 				sum += c.totalValue();
 			}
 
