@@ -45,7 +45,7 @@ public class Account {
 	}
 
 	public void withdrawn(double value) {
-		balance -= value;
+		balance -= value + 5.0;
 	}
 
 }
