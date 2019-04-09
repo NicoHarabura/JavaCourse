@@ -1,6 +1,6 @@
 package course.Teoria.HerançaEPolimorfismo.ExemploConta.Entities;
 
-public class BusinessAccount extends Account {
+public final class BusinessAccount extends Account {
 
 	private Double loanLimit;
 
@@ -28,7 +28,7 @@ public class BusinessAccount extends Account {
 	}
 
 	@Override
-	public void withdrawn(double value) {
+	public final void withdrawn(double value) {
 		super.withdrawn(value);
 		balance -= 2.0;
 	}

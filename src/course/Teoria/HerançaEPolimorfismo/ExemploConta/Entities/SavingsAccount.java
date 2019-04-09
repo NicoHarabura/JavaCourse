@@ -1,6 +1,6 @@
 package course.Teoria.HerançaEPolimorfismo.ExemploConta.Entities;
 
-public class SavingsAccount extends Account{
+public final class SavingsAccount extends Account{
 
 	private Double interestRate;
 
@@ -26,7 +26,7 @@ public class SavingsAccount extends Account{
 	}
 	
 	@Override
-	public void withdrawn(double value) {
+	public final void withdrawn(double value) {
 		balance -= value;
 	}
 	
