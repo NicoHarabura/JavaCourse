@@ -13,11 +13,13 @@ public class Program {
 		System.out.println("Digite a quantidade: ");
 		int n = sc.nextInt();
 		System.out.println("Agora digite os elementos: ");
-		ServicoImpressao si = new ServicoImpressao();
+		ServicoImpressao<Integer> si = new ServicoImpressao<Integer>();
 		for (int i = 0; i < n; i++) {
-			si.addValor(sc.next());
+			si.addValor(sc.nextInt());
 		}
 
+		Integer x = si.primeiro();
+		
 		System.out.println();
 		System.out.println(si.primeiro());
 		System.out.println();

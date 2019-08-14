@@ -3,15 +3,15 @@ package course.Teoria.generics.services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServicoImpressao {
+public class ServicoImpressao<T> {
 
-	private List<Object> list = new ArrayList<>();
+	private List<T> list = new ArrayList<>();
 	
-	public void addValor (Object value) {
+	public void addValor (T value) {
 		list.add(value);
 	}
 	
-	public Object primeiro() {
+	public T primeiro() {
 		if (list.isEmpty()) {
 			throw new IllegalStateException("Lista está vazia");
 		}
