@@ -1,10 +1,10 @@
 package course.Teoria.defaultMethods.services;
 
-public class ServicoTaxaBrasil implements ServicoTaxa {
+public class ServicoTaxaEUA implements ServicoTaxa{
 
 	private Double taxaJuros;
 
-	public ServicoTaxaBrasil(Double taxaJuros) {
+	public ServicoTaxaEUA(Double taxaJuros) {
 		this.taxaJuros = taxaJuros;
 	}
 
@@ -13,4 +13,5 @@ public class ServicoTaxaBrasil implements ServicoTaxa {
 		return taxaJuros;
 	}
 
+	
 }

@@ -2,7 +2,8 @@ package course.Teoria.defaultMethods.application;
 
 import java.util.Scanner;
 
-import course.Teoria.defaultMethods.services.ServicoTaxaBrasil;
+import course.Teoria.defaultMethods.services.ServicoTaxa;
+import course.Teoria.defaultMethods.services.ServicoTaxaEUA;
 
 public class Program {
 
@@ -13,7 +14,7 @@ public class Program {
 		double valor = sc.nextDouble();
 		int meses = sc.nextInt();
 
-		ServicoTaxaBrasil stb = new ServicoTaxaBrasil(2.0);
+		ServicoTaxa stb = new ServicoTaxaEUA(1.0);
 		double pagamento = stb.pagamento(valor, meses);
 
 		System.out.println("Após " + meses + " meses, será pago: ");
