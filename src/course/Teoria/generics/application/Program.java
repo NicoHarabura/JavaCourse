@@ -10,12 +10,12 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Digite a quantidade de numeros: ");
+		System.out.println("Digite a quantidade: ");
 		int n = sc.nextInt();
-		System.out.println("Agora digite os numeros: ");
+		System.out.println("Agora digite os elementos: ");
 		ServicoImpressao si = new ServicoImpressao();
 		for (int i = 0; i < n; i++) {
-			si.addValor(sc.nextInt());
+			si.addValor(sc.next());
 		}
 
 		System.out.println();
