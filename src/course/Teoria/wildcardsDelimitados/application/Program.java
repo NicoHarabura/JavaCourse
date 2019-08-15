@@ -26,7 +26,7 @@ public class Program {
 
 	}
 
-	public static double totalAreas(List<Shape> list) {
+	public static double totalAreas(List<? extends Shape> list) {
 		double sum = 0;
 		for (Shape s : list) {
 			sum += s.area();
