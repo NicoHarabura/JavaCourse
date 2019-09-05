@@ -22,7 +22,7 @@ public class Program {
 		//list.forEach(Product::statciPriceUpdate);
 		
 		//Reference method com método não estático
-		list.forEach(Product::nonStatciPriceUpdate);
+		//list.forEach(Product::nonStatciPriceUpdate);
 		
 		//Expressão lambda declarada
 		//double factor = 1.1;
